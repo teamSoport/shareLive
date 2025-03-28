@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #631b9a;
 }
 .container {
     width: 400px;
@@ -37,21 +37,21 @@ input {
 button {
     padding: 10px;
     font-size: 16px;
-    background-color: #007BFF;
+    background-color: #6a06896b;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #b300a1;
 }
 .toggle-link {
     text-align: center;
     margin-top: 10px;
 }
 .toggle-link a {
-    color: #007BFF;
+    color: #e100ff;
     text-decoration: none;
 }
 .toggle-link a:hover {

@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(135deg, #007BFF, #0056b3);
-    color: rgb(52, 51, 51);
+    background: linear-gradient(135deg, #c277d7, #a3c4e7);
+    color: rgb(80, 77, 77);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: white;
-    color: #007BFF;
+    color: #ca7ee5;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -40,11 +40,11 @@ body {
 
 .loader {
     border: 5px solid #f3f3f3;
-    border-top: 5px solid #007BFF;
+    border-top: 5px solid #6b18ae;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite;
+    animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
