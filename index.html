@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="./public/css/splash.css">
 </head>
 <body>
-    <div class="container">
+    <div id="splash" class="splash-container">
+        <h1>Welcome</h1>
+        <p>Loading...</p>
+        <div class="loader"></div>
+    </div>
+
+    <div class="container" style="display: none;">
         <h2 id="form-title">Login</h2>
         <form id="login-form">
             <label for="email">Email:</label>
@@ -39,6 +45,16 @@
     </div>
 
     <script>
+        const splash = document.getElementById('splash');
+        const container = document.querySelector('.container');
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                splash.style.display = 'none';
+                container.style.display = 'block';
+            }, 3000); // Simulate 3 seconds of loading
+        });
+
         const loginForm = document.getElementById('login-form');
         const registerForm = document.getElementById('register-form');
         const toggleFormLink = document.getElementById('toggle-form');

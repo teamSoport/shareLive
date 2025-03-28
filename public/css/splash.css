@@ -1,12 +1,13 @@
 body {
     background: linear-gradient(135deg, #007BFF, #0056b3);
-    color: white;
+    color: rgb(52, 51, 51);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .splash-container {
@@ -20,7 +21,7 @@ body {
 
 .splash-container p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .splash-container button {
@@ -35,4 +36,22 @@ body {
 
 .splash-container button:hover {
     background-color: #f4f4f4;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007BFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
